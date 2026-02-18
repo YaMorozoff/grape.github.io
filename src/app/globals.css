@@ -1,0 +1,171 @@
+@import 'tailwindcss';
+@theme {
+  --font-CyGrotesk: 'CyGrotesk', sans-serif;
+  --font-FiraCode: 'FiraCode', monospace;
+  --font-FiraMono: 'FiraMono', monospace;
+  --color-grape: #6348ea;
+  --color-main: #0a0a0a;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --breakpoint-xs: 24rem;
+  --breakpoint-xm: 28rem;
+  --breakpoint-3xl: 120rem;
+}
+
+@font-face {
+  font-family: 'CyGrotesk';
+  src: url('../shared/fonts/CyGroteskTrial.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraCode';
+  src: url('../shared/fonts/FiraCode.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraMono';
+  src: url('../shared/fonts/FiraMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: Regular;
+}
+@font-face {
+  font-family: 'FiraMono';
+  src: url('../shared/fonts/FiraMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: Medium;
+}
+@font-face {
+  font-family: 'FiraMono';
+  src: url('../shared/fonts/FiraMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: Bold;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0a0a0a;
+}
+
+input {
+  background-color: #0a0a0a;
+}
+button {
+  @apply cursor-pointer;
+}
+button:hover {
+  @apply bg-white/80;
+}
+
+@layer utilities {
+  @keyframes loadingDots {
+    0% {
+      content: '';
+    }
+    25% {
+      content: '.';
+    }
+    50% {
+      content: '..';
+    }
+    75% {
+      content: '...';
+    }
+    100% {
+      content: '';
+    }
+  }
+  @keyframes pulseBrightness {
+    0%,
+    100% {
+      filter: brightness(50%);
+    }
+    50% {
+      filter: brightness(125%);
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-appear {
+    animation: appear 0.3s ease-in-out;
+  }
+  .animate-appear-slow {
+    animation: appear 1s ease-in-out;
+  }
+  .animate-brightness {
+    animation: pulseBrightness 1s infinite;
+  }
+  .animate-brightness-slow {
+    animation: pulseBrightness 3s infinite;
+  }
+  .animate-loading-dots::after {
+    content: '';
+    display: flex;
+    width: 1.2ch;
+    animation: loadingDots 1s steps(4, end) infinite;
+  }
+}
+
+@layer components {
+  .text-grotesk-xl {
+    @apply font-CyGrotesk text-[20px] xl:text-[40px];
+  }
+  .text-grotesk-md {
+    @apply font-CyGrotesk text-[20px] md:text-[34px];
+  }
+  .text-grotesk-xs {
+    @apply font-CyGrotesk text-[18px] xl:text-[30px];
+  }
+
+  .text-mono-xl {
+    @apply font-FiraCode text-[32px];
+  }
+  .text-mono-md {
+    @apply font-FiraCode text-[16px] xl:text-[20px];
+  }
+  .text-mono-xs {
+    @apply font-FiraCode text-[14px] md:text-[18px];
+  }
+
+  .text-code-xl {
+    @apply font-FiraMono text-[28px];
+  }
+  .text-code-md {
+    @apply font-FiraMono text-[16px] xl:text-[24px];
+  }
+  .text-code-xs {
+    @apply font-FiraMono text-[14px] tracking-normal md:text-[20px] xl:leading-7.75;
+  }
+  .title {
+    @apply font-CyGrotesk text-center text-[20px] uppercase md:w-[70%] md:text-[28px] xl:text-[40px];
+  }
+}
+
+.blur-box::before,
+.blur-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+.blur-box::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0));
+}
+.blur-box::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0));
+}

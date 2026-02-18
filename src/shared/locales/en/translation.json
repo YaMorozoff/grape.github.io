@@ -1,0 +1,146 @@
+{
+  "grape": "GRAPE",
+  "sendRequest": "Send request",
+  "header": {
+    "main": "Home",
+    "specialization": "Specialization",
+    "clients": "For clients",
+    "about": "About",
+    "contacts": "Contacts",
+    "btn": "Apply for a card"
+  },
+  "main": {
+    "title": "We generate high-quality traffic across different verticals and desired volumes, and implement the necessary solutions for your project.\nA creative studio from web to vector graphics",
+    "btn": "Learn more"
+  },
+  "specialization": {
+    "trafic": {
+      "title": "Traffic",
+      "subtitle": "We bring high-quality leads tailored to your task. Extensive experience across many niches and directions. We select the necessary traffic source individually for your request. We properly optimize pixels, work with APIs, trackers, cloaking and everything required for your project.",
+      "list": [
+        "In-depth audience analysis",
+        "Review of current approaches for the vertical",
+        "Search and creation of working funnels",
+        "Integration of necessary software",
+        "Development of a unified concept",
+        "Creation of landing pages / pre-lands / apps"
+      ]
+    },
+    "design": {
+      "title": "Design",
+      "subtitle": "We create and develop design for any of your requests. We take on the full range of design tasks — from idea and concept to final implementation. We work precisely, systematically and with attention to detail, taking into account current trends and approaches. We create unique solutions that make you stand out from competitors.",
+      "list": [
+        "Development of a complete project concept",
+        "UX/UI (WEB/APP)",
+        "Brand design",
+        "Vector graphics",
+        "Motion design",
+        "Identity",
+        "Raster graphics",
+        "3D visualization",
+        "Social media packaging"
+      ]
+    },
+    "management": {
+      "title": "Management",
+      "subtitle": "We will analyze your funnel and sales stages. We help with landing pages and correct messaging. We will develop a marketing strategy for your project with an individual approach and adaptation to your market.",
+      "list": [
+        "Development of strategic marketing",
+        "Funnel analysis",
+        "Clear communication of product value",
+        "Marketing logic",
+        "Project structure analysis",
+        "Market and competitor research"
+      ]
+    }
+  },
+  "clients": {
+    "title": "We work with all relevant traffic sources",
+    "domains": [
+      "Platforms",
+      "Education",
+      "Services",
+      "Dating",
+      "Betting",
+      "Crypto",
+      "Leadgen",
+      "Binary options",
+      "Fintech",
+      "Gambling",
+      "Nutra"
+    ]
+  },
+  "about": {
+    "title": "We work with various projects worldwide",
+    "countries": {
+      "us": "USA + CANADA",
+      "eu": "EUROPE",
+      "ru": "CIS",
+      "cz": "ASIA",
+      "la": "LATIN AMERICA",
+      "uar": "AFRICA + MIDDLE EAST",
+      "au": "AUSTRALIA"
+    }
+  },
+  "feedback": {
+    "title": "What people say about us",
+    "subtitle": "You always understand what is being done, why and what result it leads to — without “magic” or fluff. We focus on steady project growth, not one-off tasks.",
+    "btn": "Submit a request",
+    "feedbackList": [
+      {
+        "id": "1",
+        "content": "“We have been working with the team for over a year in the crypto vertical. Thanks for the responsiveness and quality service, everything is always done on time and as agreed, which is very important for the project. We recommend them and wish the project success!”",
+        "from": "Anonymous"
+      },
+      {
+        "id": "2",
+        "content": "“We express our huge gratitude to the team for high-quality leads, field - online education. We searched for reliable partners for a long time who could handle everything and still deliver proper quality. We have been working for over 6 months, and the metrics keep improving month by month. Thank you for being there ❤️“",
+        "from": "Anonymous"
+      },
+      {
+        "id": "3",
+        "content": "“We have been working with the team for more than 4 months. We received a stable flow of quality leads, conversion nearly doubled. Special mention for competent analytics and process transparency. We recommend them as a reliable contractor.”",
+        "from": "Anonymous"
+      },
+      {
+        "id": "4",
+        "content": "“Honestly — I didn't expect this level. The design turned out 🔥, the site actually sells, not just looks pretty. Thanks to the team, you are awesome!”",
+        "from": "Anonymous"
+      },
+      {
+        "id": "5",
+        "content": "“We ordered an MVP and design. The team quickly grasped the idea, proposed solutions and helped avoid unnecessary costs. As a result, we launched faster than planned. Very satisfied.”",
+        "from": "Anonymous"
+      },
+      {
+        "id": "6",
+        "content": "“The team is truly engaged, always in touch, explains complex things in simple terms. You can feel they care about results, not just closing a project. Most importantly — they take responsibility for all processes and deliver results.”",
+        "from": "Anonymous"
+      },
+      {
+        "id": "7",
+        "content": "“We ordered web development and integrations. The code is clean, the architecture is well thought out, no hacks. Everything works stably, fixes are applied quickly. Professional approach.”",
+        "from": "Anonymous"
+      }
+    ]
+  },
+  "feedBackForm": {
+    "title": "Leave a request and our manager will contact you",
+    "form": {
+      "name": "Your Name",
+      "email": "E-mail / Telegram",
+      "request": "Request (brief)",
+      "whatsapp": "Whatsapp",
+      "btn": "Send request"
+    },
+    "formModal": {
+      "title": "Your application has been successfully submitted. Our manager will contact you shortly.",
+      "btn": "Confirm"
+    }
+  },
+  "footer": {
+    "contacts": "Contacts",
+    "politics": "Privacy Policy",
+    "rules": "Terms of Use"
+  }
+}
